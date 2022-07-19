@@ -28,7 +28,13 @@ export const Header: VFC = memo(() => {
         </Box>
         <Link>設定</Link>
       </Flex>
-      <IconButton icon={} />
+      <IconButton
+        aria-label="メニューボタン"
+        icon={<HamburgerIcon />}
+        size="sm"
+        variant="unstyled"
+        display={{ base: "block", md: "none" }}
+      />
     </Flex>
   );
 });
